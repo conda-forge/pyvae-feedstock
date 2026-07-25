@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyvae
-  version: "0.1.1"
+  version: "0.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 source:
   # Built from the PyPI sdist (conda-forge does not build from git for releases).
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ac35b7ce99684a773ab6a7160953ff0c2fb2470e264bddba647c4d7d1cd050f1
+  sha256: 9455e8af538d71a55fb97df1b103f1673b858fe3762db98ca0d96d3864ff54bd
 
 build:
   noarch: python
